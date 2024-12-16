@@ -1,0 +1,25 @@
+# Set proxy for GitHub (HTTP and HTTPS)
+git config --global http.proxy http://rnla130232:502321@staffnet.rgukt.ac.in:3128
+git config --global https.proxy http://rnla130232:502321@staffnet.rgukt.ac.in:3128
+
+# Set proxy for npm (HTTP and HTTPS)
+npm config set proxy http://rnla130232:502321@staffnet.rgukt.ac.in:3128
+npm config set https-proxy http://rnla130232:502321@staffnet.rgukt.ac.in:3128
+
+# Set proxy for HTTP and HTTPS
+export http_proxy="http://rnla130232:502321@staffnet.rgukt.ac.in:3128"
+export https_proxy="http://rnla130232:502321@staffnet.rgukt.ac.in:312"
+
+# Unset proxy for HTTP and HTTPS
+unset HTTP_PROXY
+unset http_proxy
+unset HTTPS_PROXY
+unset https_proxy
+
+# Unset proxy for GitHub (HTTP and HTTPS)
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+
+# Unset proxy for npm (HTTP and HTTPS)
+npm config delete proxy
+npm config delete https-proxy
